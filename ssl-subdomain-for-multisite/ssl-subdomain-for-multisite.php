@@ -2,7 +2,7 @@
 /*
 Plugin Name: SSL Subdomain for Multisite
 Plugin URI: http://www.vanpattenmedia.com/
-Description: Ensure logins are always done via SSL on the subdomain of the master site, but that access to the custom domain are always done over HTTP, to avoid certificate errors. For WordPress Multisite.
+Description: Ensures logins are always done via SSL on any subdomain of the master domain, but that access to custom domains are always done over HTTP, to avoid certificate errors. For WordPress Multisite.
 Version: 0.1
 Author: Peter Upfold
 Author URI: http://peter.upfold.org.uk/
