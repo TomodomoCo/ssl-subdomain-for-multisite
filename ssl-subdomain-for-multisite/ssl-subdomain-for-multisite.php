@@ -3,7 +3,7 @@
 Plugin Name: SSL Subdomain for Multisite
 Plugin URI: http://www.vanpattenmedia.com/
 Description: Ensures logins are always done via SSL on any subdomain of the master domain, but that access to custom domains are always done over HTTP, to avoid certificate errors. For WordPress Multisite.
-Version: 0.1
+Version: 1.0
 Author: Peter Upfold
 Author URI: http://peter.upfold.org.uk/
 License: GPL2
@@ -25,20 +25,19 @@ License: GPL2
 */
 
 
-/*****************************************
+/*********************************************************
 			WHAT THIS PLUGIN DOES
 		
 		INCORPORATING
 			FOOLISH ASSUMPTIONS
-******************************************
+**********************************************************
 		
-		 (((((((((((((((((())))))))))))))))))
-		 (									)
-		 (	or, a readme you *should* read	)
-		 (		before implementing			)
-		 (		this plugin on your site	)
-		 (									)
-		 (((((((((((((((((())))))))))))))))))											
+		 (((((((((((((((((())))))))))))))))))))))))))))
+		 (	or, a readme you *should* read	)))))))
+		 (		before implementing	)))))))
+		 (		this plugin on your site)))))))
+		 (					)))))))
+		 (((((((((((((((((())))))))))))))))))))))))))))			
 		
 
 This plugin filters the login, logout, home and admin URLs that WordPress
@@ -71,7 +70,7 @@ This plugin facilitates that -- rewriting the login and logout and wp-admin URLs
 the first example, and rewriting all the others to the second style.
 
 ******************************************
-			FOOLISH ASSUMPTIONS
+	FOOLISH ASSUMPTIONS
 ******************************************
 
 This plugin makes some (foolish) assumptions about your multisite network. You must
