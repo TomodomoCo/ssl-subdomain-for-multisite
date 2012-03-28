@@ -141,14 +141,14 @@ function sslsubc_filter_custom_domain_login_url($url)
 	if (!$pUrl)
 		return $url;
 		
-	if ($pUrl['host'] != $topHost)
+	if ($pUrl['host'] != $topHost  && ( parse_url(get_site_url(), PHP_URL_HOST) != parse_url(network_site_url(), PHP_URL_HOST)  ) )
 	{
 		$url = 'https://'.$originalDomain.'.'.$topHost.$pUrl['path']; // reconstruct "bottom-level.master-domain/path"
 		$url .= (!empty($pUrl['query']) ? '?'.$pUrl['query']: '');
 		return $url;
 	}
 	else {
-		return $url;
+		return preg_replace('/^http:\/\//', 'https://', $url);
 	}
 	
 }
