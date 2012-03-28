@@ -57,6 +57,6 @@ This plugin makes some (foolish) assumptions about your multisite network. You m
 		
 		*	Your web server also needs to be [set up](http://www.lampjunkie.com/2008/05/how-to-set-up-a-wildcard-catch-all-virtual-host-in-apache/ "A tutorial on wildcard catch all hosting for Apache") to handle hosting a wildcard name virtual host. All of this is really part of the WPMU Domain Mapping set up, and not the set up for this plugin. I’m just, you know, mentioning it.
 			  
-4.	You have the `FORCE_SSL_LOGIN` setting in `wp-config.php` **ON**.
+4.	You have the `FORCE_SSL_LOGIN` setting in `wp-config.php` **true**.
 		
-5.	You have the `FORCE_SSL_ADMIN` setting in `wp-config.php` **OFF**. We’ll handle that — WordPress’ forcing of SSL admins will conflict with this plugin.
+5.	You have the `FORCE_SSL_ADMIN` setting in `wp-config.php` **false**. We’ll handle that — WordPress’ forcing of SSL admins will conflict with this plugin.
